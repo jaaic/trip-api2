@@ -1,0 +1,39 @@
+{
+  "name": "jaai/trip-api2",
+  "description": "Trip api v2",
+  "license": "proprietary",
+  "type": "project",
+  "version": "1.0.0",
+  "require": {
+    "php": ">=7.1.0"
+  },
+  "config": {
+    "discard-changes": true,
+    "optimize-autoloader": true,
+    "cache-dir": "./../composer-cache",
+    "bin-dir": "./bin"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Tests\\": "tests/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests/",
+      "database/"
+    ]
+  },
+  "extra": {
+    "writable": [
+      "storage"
+    ]
+  },
+  "repositories": [
+  ],
+  "scripts": {
+  }
+}
